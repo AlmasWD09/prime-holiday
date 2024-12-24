@@ -5,15 +5,22 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FiSearch } from "react-icons/fi";
-import { HiOutlineShoppingCart } from "react-icons/hi";
-
 import { useRouter } from "next/navigation";
 
 
 const Navbar = () => {
   const [getMenu, setMenu] = useState(false);
+  const [navbar, setNavbar] = useState(false)
   const router = useRouter()
+
+  // background color add in navbar scroll
+  const changeBackground = () => {
+    if (window.scrollY >= 32) {
+      setNavbar(true)
+    }
+    else { setNavbar(false) }
+  }
+  window.addEventListener('scroll', changeBackground)
 
   const navLinks = [
     {
@@ -52,7 +59,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="bg-gray-100 font-noto fixed w-full shadow-md z-50 py-1">
+    <nav className={navbar ? 'bg-black/95 py-4 fixed w-full z-30' : ' py-4 fixed w-full'}>
       <div className=" flex items-center justify-between container mx-auto px-4 ">
         <div className="lg:hidden" onClick={() => setMenu(!getMenu)}>
           {getMenu ? (
@@ -64,19 +71,14 @@ const Navbar = () => {
 
         {/* left section  */}
         <div className=" hidden lg:block">
-          <Image onClick={() => handleClick()} className="cursor-pointer" src="https://i.ibb.co.com/6W21TPV/image-4.png" alt="logo" height={1000} width={200} />
+        <GiHamburgerMenu className="text-xl text-white  w-10 h-10 p-2" />
         </div>
         <div className="flex items-center ml-40 gap-8 lg:hidden">
-          <div onClick={() => handleCart()} className="cursor-pointer">
-            <HiOutlineShoppingCart className="relative text-2xl " />
-            {/* <p className="absolute top-3 ml-4 w-4 h-4 bg-primary text-white rounded-full flex justify-center items-center text-xs"> {cartItems.length}</p> */}
-          </div>
-          <FiSearch className="text-2xl" />
           <Image className="w-14 h-1w-14" src="https://i.ibb.co.com/MRxhScd/Ellipse-223.png" alt="avater" width={100} height={100} />
         </div>
 
         <div className="hidden lg:flex ">
-          <ul className="flex items-center gap-6">
+          {/* <ul className="flex items-center gap-6">
             {navLinks.map((item) => (
               <Link key={item.path} href={item.path}>
                 <div className="group relative">
@@ -86,23 +88,16 @@ const Navbar = () => {
                 </div>
               </Link>
             ))}
-          </ul>
+          </ul> */}
+          <Image src="/logo.png" alt="nav logo" width={200} height={200}/>
         </div>
         {/* navlinks / center section end  */}
 
         <div className="flex items-center gap-2 lg:gap-6">
           {/* button start  */}
           <div className="group relative hidden lg:flex items-center gap-8">
-            <div className="flex items-center gap-8">
-              <div onClick={() => handleCart()} className="cursor-pointer">
-                <HiOutlineShoppingCart className="relative text-2xl " />
-                {/* <p className="absolute -top-1 left-2 w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center text-xs"> {cartItems.length}</p> */}
-              </div>
-              <FiSearch className="text-2xl" />
-            </div>
             <div className="flex items-center gap-4">
-              <button className="border border-primary px-6 py-2">Login</button>
-              <button className="bg-primary/90 hover:bg-primary text-white px-6 py-2">Sign Up</button>
+              <button className="border border-white text-white px-6 py-2">Enquire now</button>
             </div>
           </div>
         </div>
@@ -129,11 +124,10 @@ const Navbar = () => {
           </ul>
           <div className="flex flex-col gap-4 mt-4">
             <button className="border border-primary rounded px-6 py-2">Login</button>
-            <button className="bg-primary/90 hover:bg-primary text-white px-6 py-2">Sign Up</button>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

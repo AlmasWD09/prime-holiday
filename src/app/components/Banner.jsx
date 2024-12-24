@@ -3,24 +3,23 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Banner = () => {
   return (
-      <div
-        className="relative w-full h-[356px] lg:h-[550px] bg-no-repeat bg-cover bg-center pt-10"
-        style={{
-          backgroundImage: "url(https://i.ibb.co.com/9VBbGDG/ban.jpg)"
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-[356px] lg:h-[550px] bg-black bg-opacity-80"></div>
+    <div
+      className=" bg-black/95 w-full h-[356px] lg:h-[550px] bg-no-repeat bg-cover bg-center "
+    // style={{
+    //   backgroundImage: "url(https://i.ibb.co.com/9VBbGDG/ban.jpg)"
+    // }}
+    >
 
-        {/* Content */}
-        <div className="relative z-10 grid justify-center items-center h-[356px] lg:h-[550px] text-white p-8">
-          <div>
-            <h1 className="text-[24px] lg:text-[64px] font-noto mb-5">Universal Workouts<br />
-              Anytime, Anywhere.</h1>
-            <button className="bg-primary/90 hover:bg-primary mx-auto text-center text-white py-2 px-3 lg:py-3 lg:px-8 flex items-center gap-3">Join our class <GoArrowUpRight /></button>
-          </div>
+
+      {/* Content */}
+      <div className="relative z-10 grid justify-center items-center h-[356px] lg:h-[550px] text-white p-8">
+        <div>
+          <h1 className=" text-center text-[24px] lg:text-[70px] text-primary font-semibold  mb-5">Your All-Inclusive Journey Starts Here</h1>
+          <p className="text-[32px] font-bold w-[65%] mx-auto text-center"> “  The Essence of a Holiday is to Enrich 
+          Our Lives and Create Lasting Memories  ”</p>
         </div>
       </div>
+    </div>
   )
 }
 
