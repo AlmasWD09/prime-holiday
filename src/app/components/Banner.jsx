@@ -1,3 +1,4 @@
+
 "use client"
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -24,3 +25,4 @@ const Banner = () => {
 }
 
 export default Banner
+

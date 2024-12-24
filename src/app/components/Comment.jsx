@@ -5,7 +5,7 @@ import Image from "next/image"
 const Comment = () => {
   return (
     <>
-      <section className="container px-4 mx-auto">
+      <section className="container px-4 mx-auto pt-10">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/2">
             <h2 className="text-[48px] font-Montserrat font-semibold text-primary">COMMITMENT TO EXCELLENCE</h2>
@@ -21,11 +21,12 @@ const Comment = () => {
             />
           </div>
         </div>
-          {/* video */}
-          <div className="rounded-md mt-10">
-            <iframe className="rounded-md" width="100%" height="600" src="https://www.youtube.com/embed/FBs0l6cxl1o?si=StyUg6AlcQwJZtKq" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          </div>
+
       </section>
+      {/* video */}
+      <div className="rounded-md mt-10 bg-gray-200 py-20">
+        <iframe className="max-w-[50%] mx-auto" width="50%" height="600" src="https://www.youtube.com/embed/fEErySYqItI?si=otaQYhvbetqggv2S" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      </div>
     </>
   )
 }

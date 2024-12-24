@@ -59,7 +59,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={navbar ? 'bg-black/95 py-4 fixed w-full z-30' : ' py-4 fixed w-full'}>
+    <nav className={navbar ? 'bg-black/95 py-4 fixed w-full z-50' : ' py-4 fixed w-full z-50'}>
       <div className=" flex items-center justify-between container mx-auto px-4 ">
         <div className="lg:hidden" onClick={() => setMenu(!getMenu)}>
           {getMenu ? (
