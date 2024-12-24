@@ -8,7 +8,7 @@ const Includes = () => {
         <>
             <section className="container mx-auto px-4">
                 <div className="p-6 border border-[#135029] border-opacity-20">
-                    <div className="grid grid-cols-4 gap-4 border-b border-gray-300 pb-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 border-b border-gray-300 pb-6">
                         <button className="py-3 text-center text-lg font-semibold bg-[#135029] text-white">
                             INCLUDES & EXCLUDES
                         </button>
@@ -28,9 +28,9 @@ const Includes = () => {
                         <h3 className="text-white uppercase">Excludes</h3>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-8 mt-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
                         {/* Includes Section */}
-                        <div className="border-r border-[#135029] border-opacity-30">
+                        <div className="border-b lg:border-r border-[#135029] border-opacity-30">
                             <ul className="p-6 space-y-4 text-gray-800">
                                 <li className="flex items-start space-x-2">
                                     <span className="text-primary">&#9679;</span>
@@ -115,12 +115,12 @@ const Includes = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-end gap-6 mt-6">
-                        <button className="flex items-center gap-1 px-6 py-2 text-primary border border-yellow-600">
+                <div className="flex flex-col lg:flex-row lg:justify-end gap-6 mt-6">
+                        <button className="flex items-center justify-center lg:justify-start gap-1 px-6 py-2 text-primary border border-yellow-600">
                             <GiSelfLove className="text-2xl"/>
                             SAVE
                         </button>
-                        <button className="flex items-center gap-1 px-6 py-2 text-primary border border-yellow-600">
+                        <button className="flex items-center justify-center lg:justify-start gap-1 px-6 py-2 text-primary border border-yellow-600">
                             <PiShareFat className="text-2xl"/>
                             SHARE
                         </button>

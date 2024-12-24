@@ -28,24 +28,12 @@ const Navbar = () => {
       title: "Home",
     },
     {
-      path: "/academy",
-      title: "Academy to Studio",
+      path: "/destination",
+      title: "Destination",
     },
     {
       path: "/membership",
       title: "MemberShip",
-    },
-    {
-      path: "/about",
-      title: "About Us",
-    },
-    {
-      path: "/contact",
-      title: "Contact Us",
-    },
-    {
-      path: "/blog",
-      title: "Blogs",
     },
   ];
   // navigate for home page
@@ -73,8 +61,8 @@ const Navbar = () => {
         <div className=" hidden lg:block">
         <GiHamburgerMenu className="text-xl text-white  w-10 h-10 p-2" />
         </div>
-        <div className="flex items-center ml-40 gap-8 lg:hidden">
-          <Image className="w-14 h-1w-14" src="https://i.ibb.co.com/MRxhScd/Ellipse-223.png" alt="avater" width={100} height={100} />
+        <div className="flex items-center ml-60 gap-8 lg:hidden">
+          <Image className="" src="/logo.png" alt="avater" width={100} height={100}/>
         </div>
 
         <div className="hidden lg:flex ">
