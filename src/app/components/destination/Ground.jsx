@@ -3,24 +3,25 @@
 const Ground = () => {
     const grounds = [
         {
-        image : "https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+          image : "https://i.ibb.co.com/qJFPFtT/immersion-Cultural-Oman-photo-1.png",
         title1 : "Immersion in Cultural Oman",
         title2 : "9 Days From"
         },
         {
-        image : "https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        image : "https://i.ibb.co.com/RcKjwcm/Picture6-1.png",
         title1 : "Immersion in Cultural Oman",
         title2 : "9 Days From"
         },
         {
-        image : "https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+       
+        image : "https://i.ibb.co.com/vJ5rW1J/Luxury-Oman-photo-1.png",
         title1 : "Immersion in Cultural Oman",
         title2 : "9 Days From"
         },
     ]
   return (
     <>
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto px-4 pt-10">
     <h2 className="text-primary text-center font-Montserrat text-[38px] font-semibold">All-Inclusive ground packages</h2>
 
     {/* ************** */}
