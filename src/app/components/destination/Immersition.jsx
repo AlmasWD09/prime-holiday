@@ -22,7 +22,7 @@ const Immersition = () => {
                                 </p>
                             </div>
                             <div className="max-w-3xl">
-                                <p>Spectacular Landscapes and Off-Road Adventures: The journey through Wadi Bani Auf, ... <span className="text-primary font-bold">Read more</span></p>
+                                <p>Spectacular Landscapes and Off-Road Adventures: The journey through Wadi Bani Auf, ... <span className="text-primary font-bold cursor-pointer">Read more</span></p>
                             </div>
                   
                     </div>

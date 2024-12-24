@@ -2,29 +2,29 @@
 
 import Image from "next/image"
 
-const Ground = () => {
+const DestinationLove = () => {
     const grounds = [
         {
-          image : "https://i.ibb.co.com/qJFPFtT/immersion-Cultural-Oman-photo-1.png",
-        title1 : "Immersion in Cultural Oman",
+          image : "/photo01.png",
+        title1 : "Qatar",
         title2 : "9 Days From"
         },
         {
-        image : "https://i.ibb.co.com/RcKjwcm/Picture6-1.png",
-        title1 : "Immersion in Cultural Oman",
+        image : "/photo02.png",
+        title1 : "sri lanka",
         title2 : "9 Days From"
         },
         {
        
-        image : "https://i.ibb.co.com/vJ5rW1J/Luxury-Oman-photo-1.png",
-        title1 : "Immersion in Cultural Oman",
+        image : "/photo03.png",
+        title1 : "Morocco",
         title2 : "9 Days From"
         },
     ]
   return (
     <>
-    <section className="container mx-auto px-4 pt-10">
-    <h2 className="text-primary text-center font-Montserrat text-[38px] font-semibold">All-Inclusive ground packages</h2>
+    <section className="container mx-auto px-4 pt-10 pb-10">
+    <h2 className="text-primary text-center font-Montserrat text-[38px] font-semibold">Destinations you'll love</h2>
 
     {/* ************** */}
         <div className="grid grid-cols-1 gap-2 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
@@ -42,7 +42,7 @@ const Ground = () => {
                         />
                         <div className="absolute w-full flex  items-center justify-between bottom-0 p-3 bg-[#135029] text-white">
                            <div>
-                            <h5>{ground.title1}</h5>
+                            <h5 className="uppercase">{ground.title1}</h5>
                             <h5>{ground.title2} <span className="font-bold">$2525</span></h5>
                            </div>
                             <div className="">
@@ -60,4 +60,4 @@ const Ground = () => {
   )
 }
 
-export default Ground
+export default DestinationLove
