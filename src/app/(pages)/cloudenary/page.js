@@ -1,4 +1,4 @@
-"use client"
+
 import CloudenaryImageUpload from "@/app/components/shared/CloudenaryImageUpload"
 import { useState } from "react"
 
