@@ -31,8 +31,12 @@ const Navbar = () => {
       title: "Destination",
     },
     {
-      path: "/membership",
-      title: "MemberShip",
+      path: "/oman",
+      title: "Oman",
+    },
+    {
+      path: "/about",
+      title: "About",
     },
   ];
  
