@@ -42,6 +42,18 @@ const Navbar = () => {
       path: "/blog",
       title: "Blog",
     },
+    {
+      path: "/conditions",
+      title: "Conditions",
+    },
+    {
+      path: "/privacy",
+      title: "Privacy",
+    },
+    {
+      path: "/cancelation",
+      title: "Cancelation",
+    },
   ];
  
   return (
