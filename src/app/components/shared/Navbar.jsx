@@ -5,13 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useRouter } from "next/navigation";
+
 
 
 const Navbar = () => {
   const [getMenu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(false)
-  const router = useRouter()
 
   // background color add in navbar scroll
   const changeBackground = () => {
@@ -36,16 +35,7 @@ const Navbar = () => {
       title: "MemberShip",
     },
   ];
-  // navigate for home page
-  const handleClick = () => {
-    router.push('/')
-  }
-  // navigate for cart page
-  const handleCart = () => {
-    router.push('/cart')
-  }
-
-
+ 
   return (
     <nav className={navbar ? 'bg-black/95 py-4 fixed w-full z-50' : ' py-4 fixed w-full z-50'}>
       <div className=" flex items-center justify-between container mx-auto px-4 ">
