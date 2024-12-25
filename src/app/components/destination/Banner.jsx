@@ -13,10 +13,6 @@ const Banner = () => {
           <h2 className="text-primary text-[44px] lg:text-[96px]">Oman</h2>
           <p>Beauty Has an Address</p>
         </div>
-        <div className="w-[90%] lg:w-[35%] text-center bg-gray-800 opacity-60 lg:p-4">
-          <p>Discover the enchanting Beauty of Oman, a destination where ancient heritage meets stunning natural landscapes. Known for its warm hospitality and rich cultural tapestry, Oman offers travelers a unique blend of experiences.
-          </p>
-        </div>
       </div>
 
     </section>

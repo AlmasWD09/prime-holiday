@@ -38,6 +38,10 @@ const Navbar = () => {
       path: "/about",
       title: "About",
     },
+    {
+      path: "/blog",
+      title: "Blog",
+    },
   ];
  
   return (
