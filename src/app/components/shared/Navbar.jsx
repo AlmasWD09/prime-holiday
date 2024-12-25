@@ -5,12 +5,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Modal from "../modal/Modal";
 
 
 
 const Navbar = () => {
   const [getMenu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [modal, setModal] = useState(false);
 
   // background color add in navbar scroll
   // const changeBackground = () => {
@@ -95,7 +98,7 @@ const Navbar = () => {
           {/* button start  */}
           <div className="group relative hidden lg:flex items-center gap-8">
             <div className="flex items-center gap-4">
-              <button className="border border-white text-white px-6 py-2">Enquire now</button>
+              <button onClick={() => setModal(true)} className="border border-white text-white px-6 py-2">Enquire now</button>
             </div>
           </div>
         </div>
@@ -125,8 +128,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {modal && <Modal isOpen={() => setIsOpen(!isOpen)} />}
     </nav>
   );
 };
 
 export default Navbar;
+
+
+
