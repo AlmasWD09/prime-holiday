@@ -7,8 +7,10 @@ import Tearms from "@/app/components/condition/Tearms"
 const Conditions = () => {
   return (
     <>
-      <Banner />
-      <Tearms />
+    <div className="pb-10">
+    <Banner />
+    <Tearms />
+    </div>
     </>
   )
 }

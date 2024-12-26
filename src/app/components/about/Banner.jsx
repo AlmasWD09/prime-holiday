@@ -12,7 +12,7 @@ const Banner = () => {
           <h1 className="lg:text-[64px] text-primary">About Us</h1>
         </div>
         <div className="bg-[#135029] py-3">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-2">
               <h2><Link className="cursor-pointer text-primary" href={'/'}>Home</Link><span className="px-2">/</span>About Us</h2>
           </div>
         </div>

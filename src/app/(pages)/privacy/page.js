@@ -9,8 +9,10 @@ import PrivacyPage from "@/app/components/privacy/PrivacyPage"
 const Privacy = () => {
   return (
     <>
-    <Banner />
-     <PrivacyPage />
+  <div className="pb-10">
+  <Banner />
+  <PrivacyPage />
+  </div>
     </>
   )
 }

@@ -9,10 +9,12 @@ import TravelTrips from "@/app/components/blog/TravelTrips"
 const BlogPage = () => {
     return (
         <>
-            <Banner />
-            <TravelTrips />
-            <DestinationGuide />
-            <HolidayInspiration />
+            <div className="pb-10">
+                <Banner />
+                <TravelTrips />
+                <DestinationGuide />
+                <HolidayInspiration />
+            </div>
         </>
     )
 }

@@ -5,7 +5,7 @@ import PrimeDestination from "@/app/components/oman/PrimeDestination"
 
 const OmanPage = () => {
   return (
-    <div>
+    <div className="pb-10">
       <Banner />
       <PrimeDestination />
     </div>

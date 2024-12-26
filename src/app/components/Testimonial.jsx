@@ -49,7 +49,7 @@ const Testimonial = () => {
   ];
 
   return (
-      <div className="w-full flex justify-center  my-20">
+      <div className="w-full flex justify-center px-4 my-20">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

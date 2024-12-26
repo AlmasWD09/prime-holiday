@@ -10,9 +10,11 @@ import DestinationLove from "@/app/components/about/DestinationLove"
 const AboutPage = () => {
     return (
         <>
-            <Banner />
+           <div className="pb-10">
+           <Banner />
             <AboutPrime />
             <DestinationLove />
+           </div>
         </>
     )
 }
