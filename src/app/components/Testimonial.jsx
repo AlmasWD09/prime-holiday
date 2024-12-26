@@ -30,7 +30,7 @@ const Testimonial = () => {
       description:
         "The best measure to our services comes from our customers. Keep an eye out as our travellers share their stories. We'll be sharing feedback from our travellers here shortly, so you can see what makes PHD unique.",
       name: "TESTIMONIALS OF SATISFACTION",
-      image: "https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      image: "http://res.cloudinary.com/dzzyhqpnk/image/upload/v1735190896/inbxylz2xcnyngok5ncq.png",
     },
     {
       quote: "Great Support",
@@ -44,12 +44,12 @@ const Testimonial = () => {
       description:
         "The best measure to our services comes from our customers. Keep an eye out as our travellers share their stories. We'll be sharing feedback from our travellers here shortly, so you can see what makes PHD unique.",
         name: "TESTIMONIALS OF SATISFACTION",
-      image: "https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      image: "https://i.ibb.co.com/fkgt4r1/photo01.png",
     },
   ];
 
   return (
-      <div className="w-full flex justify-center  my-40">
+      <div className="w-full flex justify-center  my-20">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

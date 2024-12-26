@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Banner = () => {
   return (
-    <section className="relative w-full h-[356px] lg:h-[550px] bg-no-repeat bg-cover bg-center text-white" style={{
+    <section className="relative h-[356px] lg:h-[750px] bg-no-repeat bg-cover bg-center text-white" style={{
       backgroundImage: "url(https://i.ibb.co.com/61wdQYz/Oman-1-1.png)"
     }}>
      
