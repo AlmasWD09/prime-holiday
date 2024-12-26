@@ -10,8 +10,8 @@ const InclusivePackage = () => {
       <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?1" />
       <img alt="" className="w-full h-full rounded shadow-sm min-h-48 lg:col-start-3 lg:col-end-6 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?2" /> */}
 
-      <div className=" border rounded-md lg:col-start-1 lg:col-end-3 lg:row-span-2">
-        <img className="h-full w-full" src="https://i.ibb.co.com/fkgt4r1/photo01.png" alt="" />
+      <div className="h-[500px] border rounded-md lg:col-start-1 lg:col-end-3 lg:row-span-2">
+        <img className="h-[500px] w-full" src="https://i.ibb.co.com/fkgt4r1/photo01.png" alt="" />
       </div>
       <div className=" border rounded-md ">
       <img className="h-full w-full" src="https://i.ibb.co.com/fkgt4r1/photo01.png" alt="" />
