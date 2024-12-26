@@ -63,12 +63,15 @@ const Navbar = () => {
   const handleDrawer = () => {
     setShowDrower(!showDrower)
   }
+
+  // drower hide function
   const handleClick = () => {
     setMenu(false)
     setShowDrower(false)
   }
 
-  const handleModal = () =>{
+  // modal show function
+  const handleModal = () => {
     setModal(true)
     setIsOpen(true)
   }
@@ -152,7 +155,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex flex-col gap-4 mt-4">
-            <button className="border border-primary rounded px-6 py-2">Login</button>
+          <div className="flex items-center gap-4">
+              <button onClick={() => handleModal()} className="border px-6 py-2">Enquire now</button>
+            </div>
           </div>
         </div>
       </div>

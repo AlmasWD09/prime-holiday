@@ -1,10 +1,9 @@
 "use client"
 
 import { useState } from "react";
+import { IoCloseSharp } from "react-icons/io5";
 
-const ModalPage = ({isOpen,setIsOpen}) => {
-    // const [isOpen, setIsOpen] = useState(false);
-    console.log(typeof(setIsOpen), '---------- 55')
+const ModalPage = ({ isOpen, setIsOpen }) => {
     const [formData, setFormData] = useState({
         title: "Mr.",
         firstName: "",
@@ -27,31 +26,36 @@ const ModalPage = ({isOpen,setIsOpen}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form Data Submitted:", formData);
-        // Add your API submission logic here
+        setFormData({
+            title: "Mr.",
+            firstName: "",
+            lastName: "",
+            email: "",
+            telephone: "",
+            contactMethod: "Email",
+            message: "",
+            subscribe: false,
+        });
         setIsOpen(false);
     };
 
-    const handleCloseModal = () =>{
+    // modal close function
+    const handleCloseModal = () => {
         setIsOpen(false)
-       
+
     }
     return (
         <div className="relative">
-            {/* <button
-                onClick={() => setIsOpen(true)}
-                className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
-            >
-                Open Enquiry Form
-            </button> */}
 
             {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="bg-white w-full max-w-3xl p-8 rounded-lg shadow-lg relative">
+                <div className="fixed inset-0 z-[9999px] flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-[#fffff0] w-full max-w-3xl p-8 rounded shadow-lg relative">
                         <button
                             onClick={() => handleCloseModal()}
                             className="absolute top-4 right-4 text-red-500 hover:text-gray-800"
                         >
-                            &#10005;
+                            <div className="bg-primary w-8 h-8 flex justify-center items-center rounded-full cursor-pointer"><IoCloseSharp className="text-xl text-white w-10 h-10 p-2" /></div>
+
                         </button>
                         <h2 className="text-2xl font-semibold text-center mb-6">
                             Enquiry Form
@@ -69,7 +73,7 @@ const ModalPage = ({isOpen,setIsOpen}) => {
                                         name="title"
                                         value={formData.title}
                                         onChange={handleInputChange}
-                                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                                        className="mt-1 block w-full border border-[#135029] outline-none p-2"
                                     >
                                         <option>Mr.</option>
                                         <option>Ms.</option>
@@ -91,7 +95,7 @@ const ModalPage = ({isOpen,setIsOpen}) => {
                                         value={formData.firstName}
                                         onChange={handleInputChange}
                                         required
-                                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                                        className="mt-1 block w-full border border-[#135029] outline-none p-2"
                                     />
                                 </div>
                                 <div>
@@ -105,7 +109,7 @@ const ModalPage = ({isOpen,setIsOpen}) => {
                                         value={formData.lastName}
                                         onChange={handleInputChange}
                                         required
-                                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                                        className="mt-1 block w-full border border-[#135029] outline-none p-2"
                                     />
                                 </div>
                             </div>
@@ -123,7 +127,7 @@ const ModalPage = ({isOpen,setIsOpen}) => {
                                         value={formData.email}
                                         onChange={handleInputChange}
                                         required
-                                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                                        className="mt-1 block w-full border border-[#135029] outline-none p-2"
                                     />
                                 </div>
                                 <div>
@@ -137,7 +141,7 @@ const ModalPage = ({isOpen,setIsOpen}) => {
                                         value={formData.telephone}
                                         onChange={handleInputChange}
                                         required
-                                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                                        className="mt-1 block w-full border border-[#135029] outline-none p-2"
                                     />
                                 </div>
                             </div>
@@ -183,7 +187,7 @@ const ModalPage = ({isOpen,setIsOpen}) => {
                                     onChange={handleInputChange}
                                     required
                                     rows="4"
-                                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                                    className="mt-1 block w-full border border-[#135029] outline-none p-2"
                                 ></textarea>
                             </div>
 
@@ -208,7 +212,7 @@ const ModalPage = ({isOpen,setIsOpen}) => {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700"
+                                className="bg-primary text-white px-6 py-2"
                             >
                                 Submit
                             </button>
