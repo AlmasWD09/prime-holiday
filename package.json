@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "flowbite": "^2.5.2",
     "next": "15.1.2",
     "next-cloudinary": "^6.16.0",
     "react": "^19.0.0",
