@@ -76,7 +76,7 @@ const Navbar = () => {
     setIsOpen(true)
   }
   return (
-    <nav className={navbar ? 'bg-black/95 py-4 fixed w-full z-50' : ' py-4 fixed w-full z-50'}>
+    <nav className={navbar ? 'bg-black/90 fixed w-full z-50' : ' fixed w-full z-50'}>
       <div className=" flex items-center justify-between container mx-auto px-4 ">
         <div className="lg:hidden" onClick={() => setMenu(!getMenu)}>
           {getMenu ? (
