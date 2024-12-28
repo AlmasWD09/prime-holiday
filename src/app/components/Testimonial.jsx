@@ -79,7 +79,7 @@ const Testimonial = () => {
               <h1 className="text-5xl font-semibold text-primary lg:text-3xl lg:w-96">
                 {review.name}
               </h1>
-              <p className="max-w-lg mt-6 font-Montserrat">
+              <p className="max-w-lg mt-6 font-Roboto">
                 {review.description}
               </p>
             </div>

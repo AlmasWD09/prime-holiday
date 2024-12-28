@@ -24,7 +24,7 @@ const Ground = () => {
   return (
     <>
     <section className="container mx-auto px-4 pt-10">
-    <h2 className="text-primary text-center font-Montserrat text-[38px] font-semibold">All-Inclusive ground packages</h2>
+    <h2 className="text-primary text-center font-Roboto text-[38px] font-semibold">All-Inclusive ground packages</h2>
 
     {/* ************** */}
         <div className="grid grid-cols-1 gap-2 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">

@@ -25,7 +25,7 @@ const PrimeDestination = () => {
     return (
         <>
             <section className="container mx-auto px-4 pt-20">
-                <h2 className="text-primary text-center font-Montserrat text-[38px] font-semibold">Prime Destinations</h2>
+                <h2 className="text-primary text-center font-Roboto text-[38px] font-semibold">Prime Destinations</h2>
 
                 {/* ************** */}
                     <h2 className="text-primary text-xl font-bold py-2">Africa</h2>

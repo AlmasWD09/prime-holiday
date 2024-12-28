@@ -24,7 +24,7 @@ const DestinationLove = () => {
   return (
     <>
     <section className="container mx-auto px-4 pt-10 pb-10">
-    <h2 className="text-primary text-center font-Montserrat text-[38px] font-semibold">Destinations you'll love</h2>
+    <h2 className="text-primary text-center font-Roboto text-[38px] font-semibold">Destinations you'll love</h2>
 
     {/* ************** */}
         <div className="grid grid-cols-1 gap-2 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">

@@ -11,7 +11,7 @@ export default {
         primary: "#F49D2A",
       },
       fontFamily: {
-        Montserrat: "'Montserrat', 'sans-serif'",
+        Roboto: "'Roboto', 'sans-serif'",
       },
     },
   },
